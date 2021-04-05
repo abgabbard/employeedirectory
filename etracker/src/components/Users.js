@@ -3,7 +3,6 @@ import "./styles.css";
 import API from "../utils/API";
 
 class UserContainer extends React.Component {
-  //set initial state
   state = {
     users: [],
     search: "",
@@ -33,7 +32,7 @@ class UserContainer extends React.Component {
     this.setState({ search: e.target.value });
   };
 
-  
+
   filteredUsers() {
     const search = this.state.search.toLowerCase();
     return this.state.users.filter(user => {
@@ -68,14 +67,12 @@ class UserContainer extends React.Component {
       : `clickable`;
   };
 
-
   handleSortDirectionChange = col => {
     this.state.col === col && this.state.sortDirection === "ascending"
       ? this.setState({ sortDirection: "descending", col: col })
       : this.setState({ sortDirection: "ascending", col: col });
   };
 
-  //function to return 1 or -1 to sort function depending on sort direction
   sortUsers = (a, b) => {
     if (a[this.state.col] < b[this.state.col]) {
       return this.state.sortDirection === "ascending" ? -1 : 1;
@@ -84,7 +81,6 @@ class UserContainer extends React.Component {
     }
     return 0;
   };
-
 
   render() {
     return (

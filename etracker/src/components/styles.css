@@ -1,37 +1,25 @@
-.jumbotron {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: maroon !important;
-    color: white;
-  }
-  
   .form-control {
     max-width: 300px !important;
   }
   
   thead {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: #003366;
+    background-color: #5384b5;
     color: white;
   }
   
   .clickable {
     cursor: pointer;
-    padding: 10px;
+    padding: 20px;
   }
   
   thead span.descending::after {
     content: "⬇";
     display: inline-block;
-    margin-left: 3px;
+    margin-left: 5px;
   }
   
   thead span.ascending::after {
     content: "⬆";
     display: inline-block;
-    margin-left: 3px;
+    margin-left: 5px;
   }
