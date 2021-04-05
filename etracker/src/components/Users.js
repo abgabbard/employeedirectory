@@ -91,7 +91,7 @@ class UserContainer extends React.Component {
             onChange={this.handleSearchChange}
             type="search"
             className="form-control m-3"
-            placeholder="Search"
+            placeholder="Search Employees"
             aria-label="SearchBox"
             aria-describedby="basic-addon1"
           />
