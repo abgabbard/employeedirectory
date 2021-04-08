@@ -13,6 +13,7 @@ class UserContainer extends React.Component {
   componentDidMount() {
     API.usersList()
       .then(res => {
+        console.log(res)
         const userArray = res.data.results.map(user => {
           return {
             first: user.name.first,
