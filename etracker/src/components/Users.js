@@ -18,7 +18,6 @@ class UserContainer extends React.Component {
             first: user.name.first,
             last: user.name.last,
             email: user.email,
-            dob: user.dob.date,
             phone: user.phone,
             image: user.picture.medium
             
@@ -58,7 +57,6 @@ class UserContainer extends React.Component {
             <td>{user.last}</td>
             <td>{user.email}</td>
             <td>{user.phone}</td>
-            <td>{new Date(user.dob).toDateString()}</td>
           </tr>
         );
       }); 
@@ -136,14 +134,6 @@ class UserContainer extends React.Component {
                   onClick={() => this.handleSortDirectionChange("phone")}
                   >
                     Phone
-                  </span>
-                </th>
-                <th scope="col">
-                  <span
-                    className={this.getHeaderClassName("dob")}
-                    onClick={() => this.handleSortDirectionChange("dob")}
-                  >
-                    DOB
                   </span>
                 </th>
               </tr>
