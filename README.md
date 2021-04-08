@@ -46,10 +46,10 @@
 
 ### Screenshot of application
 
-  ![Application Image Main](public/imgages/EDS01.png)
-  ![Application Image Search](public/imgages/EDS02.png)
-  ![Application Image Search 02](public/imgages/EDS03.png)
-  ![Application Image Sort Arrow](public/imgages/EDS04.png)
+  ![Application Image Main](https://github.com/abgabbard/employeedirectory/blob/main/etracker/public/images/EDS01.png?raw=true)
+  ![Application Image Search](https://github.com/abgabbard/employeedirectory/blob/main/etracker/public/images/EDS02.png?raw=true)
+  ![Application Image Search 02](https://github.com/abgabbard/employeedirectory/blob/main/etracker/public/images/EDS03.png?raw=true)
+  ![Application Image Sort Arrow](https://github.com/abgabbard/employeedirectory/blob/main/etracker/public/images/EDS04.png?raw=true)
 
   ## Questions/Contributions
 
