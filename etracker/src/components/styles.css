@@ -1,3 +1,9 @@
+body {
+  padding: 50px;
+  margin: 10px;
+  background-color: rgb(228, 228, 228);
+}
+
   .form-control {
     max-width: 300px !important;
     padding: 10px;
@@ -5,13 +11,13 @@
   }
   
   thead {
-    background-color: #5384b5;
+    background-color: #001db0;;
     color: white;
   }
   
   .clickable {
     cursor: pointer;
-    padding: 20px;
+    padding: 30px;
   }
   
   thead span.descending::after {

@@ -19,7 +19,9 @@ class UserContainer extends React.Component {
             last: user.name.last,
             email: user.email,
             dob: user.dob.date,
+            phone: user.phone,
             image: user.picture.medium
+            
           };
         });
         this.setState({ users: userArray });
@@ -55,10 +57,11 @@ class UserContainer extends React.Component {
             <td>{user.first}</td>
             <td>{user.last}</td>
             <td>{user.email}</td>
+            <td>{user.phone}</td>
             <td>{new Date(user.dob).toDateString()}</td>
           </tr>
         );
-      });
+      }); 
   };
 
   getHeaderClassName = col => {
@@ -125,6 +128,14 @@ class UserContainer extends React.Component {
                     onClick={() => this.handleSortDirectionChange("email")}
                   >
                     Email
+                  </span>
+                </th>
+                <th scope="col">
+                  <span 
+                  className={this.getHeaderClassName("phone")}
+                  onClick={() => this.handleSortDirectionChange("phone")}
+                  >
+                    Phone
                   </span>
                 </th>
                 <th scope="col">
